@@ -15,11 +15,13 @@ class _MyAppState extends State<MyApp> {
   List<Widget> score = [
                 
                 ];
-  var question_number = 0;              
+  var question_number = 0;      
+          
   void onClick(var ans){
                setState(() {
                  if(questions[question_number][1]==ans){
                    score.add(Icon(Icons.check,color: Colors.green,));
+                   scorenum = scorenum+ 1;
                   }
                  else{
                    score.add(Icon(Icons.close,color:Colors.red));
@@ -29,7 +31,7 @@ class _MyAppState extends State<MyApp> {
                  question_number = question_number + 1;
                  }
                  if (questions.length ==question_number){
-                   scorenum = 10;
+                   q_numn =questions.length ;
                    runApp(ScorePage());
                  }
                });
