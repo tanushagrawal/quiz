@@ -104,7 +104,7 @@ class _MyAppState extends State<MyApp> {
                Center(
                   child: Padding(
                        padding: const EdgeInsets.all(0),
-                       child: Text("____________________",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,)),
+                       child: Text("____________________",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.purple[800])),
                   ),
                 ),
               
